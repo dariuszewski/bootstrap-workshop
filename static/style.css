@@ -18,3 +18,13 @@ body {
 a {
     text-decoration: none;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav-right {
+    float: right;
+}
