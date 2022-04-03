@@ -2,6 +2,8 @@ const staticCacheName = "uek-site-static";
 const assets = [
     "/",
     "/index.html",
+    "/buzzer.html",
+    "/js/buzzer.js",
     "/js/app.js",
     "/static/logo.png",
     "/static/finance640x480.JPG",
