@@ -1,0 +1,52 @@
+{
+    "name": "UEK Uni",
+    "short_name": "UEK",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#181a1e",
+    "theme_color": "#181a1e",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/static/logos/logo72x72.png",
+            "type": "image/png",
+            "size": "72x72"
+        },
+        {
+            "src": "/static/logos/logo92x92.png",
+            "type": "image/png",
+            "size": "92x92"
+        },
+        {
+            "src": "/static/logos/logo128x128.png",
+            "type": "image/png",
+            "size": "128x128"
+        },
+        {
+            "src": "/static/logos/logo144x144.png",
+            "type": "image/png",
+            "size": "144x144"
+        },
+        {
+            "src": "/static/logos/logo152x152.png",
+            "type": "image/png",
+            "size": "152x152"
+        },
+        {
+            "src": "/static/logos/logo192x192.png",
+            "type": "image/png",
+            "size": "192x192"
+        },
+        {
+            "src": "/static/logos/logo384x384png",
+            "type": "image/png",
+            "size": "384x384"
+        },
+        {
+            "src": "/static/logos/logo512x512.png",
+            "type": "image/png",
+            "size": "512x512"
+        }        
+    ]
+
+}
