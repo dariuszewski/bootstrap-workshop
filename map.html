@@ -51,9 +51,11 @@
             </div>
           </nav>
         </div>
+        
         <div class="row ">
           <div id = "map" class="mh-100 mw-100" style="width:100vh; height:100vh"></div>
         </div>
+
         <script>
           
            // Creating a map object
@@ -70,12 +72,16 @@
 
            this.map.locate({
              setView: true,
-             zoom: 10
+             zoom: 20
            }).on("locationfound", e => {
                if (!marker) {
-                   marker = new L.marker(e.latlng).addTo(this.map);
+                   marker = new L.marker(e.latlng).addTo(this.map)
+                   .bindPopup('You are here')
+                   .openPopup();
                } else {
-                   marker.setLatLng(e.latlng);
+                   marker.setLatLng(e.latlng)
+                   .bindPopup('You are here')
+                   .openPopup();;
                }
            }).on("locationerror", error => {
                if (marker) {
@@ -84,24 +90,6 @@
                }
            });
       </script>
-    <!-- <script>
-      const successCallback = (position) => {
-        console.log(position)
-      };
-      const errorCallback = (error) => {
-        console.log(error)
-      };
-
-      const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback);
-      navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
-        enableHighAccuracy: true,
-        timeout: 
-      });
-
-
-      navigator.geolocation.clearWatch()
-
-    </script> -->
 
     <script src="js/app.js"></script>
     <!-- JavaScript Bundle with Popper -->
