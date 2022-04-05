@@ -3,6 +3,7 @@ const assets = [
     "/",
     "/index.html",
     "/buzzer.html",
+    "/map.html",
     "/js/buzzer.js",
     "/js/app.js",
     "/static/logo.png",
@@ -12,7 +13,9 @@ const assets = [
     "/static/style.css",
     "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro&display=swap",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
+    "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css",
+    "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"
 ];
 
 
