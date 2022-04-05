@@ -14,8 +14,8 @@ const assets = [
     "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro&display=swap",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
-    "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css",
-    "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"
+    "https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css",
+    "https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"
 ];
 
 
