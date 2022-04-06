@@ -5,6 +5,7 @@ const assets = [
     "/buzzer.html",
     "/map.html",
     "/js/buzzer.js",
+    "/js/map.js",
     "/js/app.js",
     "/static/logo.png",
     "/static/finance640x480.JPG",
