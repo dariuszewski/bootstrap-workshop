@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+img{
+    height:450px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
