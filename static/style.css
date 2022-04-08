@@ -21,6 +21,10 @@ nav {
     align-items: center;
 }
 
+td {
+    color: var(--color-dark);
+}
+
 #map {
     margin: auto;
 }
