@@ -69,7 +69,7 @@
                     <div class="card-body bg-dark mt-4">
                       <h5 class="card-title">Add Product</h5>
                       <hr>
-                      <form method="#" class="row g-3">
+                      <form method="#" class="row g-3" id="productForm">
                         <div class="col-md-12">                
                           <div class="mb-3">
                             <label for="name">Product Name:</label>
@@ -102,7 +102,9 @@
             
             // Firestore
             import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js'
-            import { collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js'
+            import { collection, doc, getDocs, addDoc } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js'
+            // import { getDatabase } from "firebase/database";
+
           
             // Your web app's Firebase configuration
             const firebaseConfig = {
@@ -119,6 +121,7 @@
 
             // Initialize Cloud Firestore and get a reference to the service
             const db = getFirestore(app);
+            // const dbWriter = firebase.database().ref("clothes")
 
             // Read data
             const querySnapshot = await getDocs(collection(db, "clothes"));
@@ -139,7 +142,36 @@
                 tbl.appendChild(row);
 
             });
-        </script>
+            // Listen for form submit
+            document.getElementById('productForm').addEventListener('submit', submitForm);
 
+        // Submit form
+        function submitForm(e){
+          e.preventDefault();
+          //Get value
+          var name = getInputVal('name');
+          var color = getInputVal('color');
+          var amount = getInputVal('amount');
+          
+          // Save message
+          saveMessage(name, color, amount);
+          
+        }
+
+        // Function to get form value
+        function getInputVal(id){
+          return document.getElementById(id).value;
+        }
+
+        // Save message to firebase
+        function saveMessage(name, color, amount){
+
+          var newMessageRef = addDoc(collection(db, "clothes"), {
+            name: name,
+            color: color,
+            amount: amount,
+          })
+        }
+          </script>
     </body>
 </html>
