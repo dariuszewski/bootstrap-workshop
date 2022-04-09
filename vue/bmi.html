@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-md-12">
+                    <h1>My height :{{ height }}cm</h1>
+                    <input v-model="height">
+                    <h1>My weight :{{ weight }}kg</h1>
+                    <input v-model="weight">
+                  
+                    <h2>My BMI is {{ bmiCalculation }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    height: null ,
+    weight: null
+  },
+  computed: {
+    bmiCalculation: function() {
+      var weight = parseInt(this.weight);
+      var height = parseInt(this.height) / 100;
+      var bmi = weight / (height * height)
+      if (Number.isNaN(bmi))
+        return ""
+      return 'BMI: ' + bmi.toFixed(2);
+    }
+  }
+})
+</script>
+</html>
