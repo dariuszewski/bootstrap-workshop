@@ -29,3 +29,14 @@ td {
     margin: auto;
 }
 
+.carousel-inner > .carousel-item {
+    text-shadow: black 1px 1px 3px;
+  }
+
+.carousel-inner > .carousel-item > img {
+    height: 60vh;
+  }
+
+.card-news > .card-body > img {
+    width: auto;
+}

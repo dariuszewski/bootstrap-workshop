@@ -27,7 +27,7 @@
               </button>
 
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="/index.html">Home</a>
                   </li>
@@ -38,40 +38,13 @@
                     <a class="nav-link" href="/buzzer.html">Buzzer</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/shop.html">Buzzer</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/table.html">Table</a>
+                    <a class="nav-link" href="/shop.html">Applications</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-3 col-sm-0"></div>
-          <div class="col-md-6 col-sm-12">
-            <div class="card-body bg-dark">
-              <h5 class="card-title">Authors</h5>
-              <hr>
-              <div class="row">
-              <div class="col-md-3">
-                <p class="card-text">
-                  Dariusz Rejdych<br>
-                  Filip Jaszczyck<br>
-                  Kacper Sraga
-                </p>
-              </div>
-              <div class="col-md-9">
-                <p class="card-text">Buzzer and map are available in navigation</p>
-                <a href="https://github.com/dariuszewski/dariuszewski.github.io" class="btn btn-primary">Source Code</a>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-0"></div>
 
-        </div>
         <div class="container mb-4 mt-4">
             <div class="row">
                 <div class="col-sm-12">
@@ -81,9 +54,89 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-4">
+
+        <div class="container mb-3">
+          <div class="row">
+              <div class="col-md-0 col-sm-2">
+                <!-- This to make carusel stay in the middle -->
+              </div>
+              <div class="col-md-8 col-sm-12">
+                  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- Indicators/dots -->
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                      </div>
+
+                      <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Krakow_univesity_of_economics_main_building_cropped.JPG/640px-Krakow_univesity_of_economics_main_building_cropped.JPG" alt="Los Angeles" class="d-block w-100 centered">
+                              <div class="carousel-caption">
+                                  <!-- <h3>Los Angeles</h3> -->
+                                  <h5 style="font-weight: bold;">Main Building</h5>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Akademia_Ekonomiczna_w_Krakowie_Pawilon_F.JPG" alt="Chicago" class="d-block w-100 centered">
+                              <div class="carousel-caption">
+                                  <!-- <h3>Los Angeles</h3> -->
+                                  <h5 style="font-weight: bold;">Finance Hall</h5>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Biblioteka_UEK.jpg/1200px-Biblioteka_UEK.jpg" alt="New York" class="d-block w-100 centered">
+                              <div class="carousel-caption">
+                                  <!-- <h3>Los Angeles</h3> -->
+                                  <h5 style="font-weight: bold;">Library</h5>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="container mb-4 mt-4">
+          <h3>Latest News</h3>
+          <hr>
             <div class="row">
+              <div class="col-sm-4 mb-3">
+                <div class="card card-news bg-dark">
+                    <div class="card-body">
+                    <h5 class="card-title">Applied Informatics</h5>
+                    <hr>
+                    <p class="card-text">
+                        The main objective of this study program is to deliver IT knowledge and specific skills needed for effective information systems management in a fast changing world. This field of study focuses on theoretical principles of computer science, algorithms.
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_PT2KJmBcCrGLdrM-UhWBs7vK2EArUQs7cg&usqp=CAU" alt="">
+                    <a href="https://studiuj.uek.krakow.pl/listings/major-applied-informatics-stacjonarne-i-stopien/" class="btn btn-primary">Go to site</a>
+                    </div>
+                </div>
+                </div>
                 <div class="col-sm-4 mb-3">
+                <div class="card card-news bg-dark">
+                    <div class="card-body">
+                    <h5 class="card-title">Logistics</h5>
+                    <hr>
+                    <p class="card-text">
+                        Engineering studies in the field of International Logistics are aimed at people who would like to work in one of the most dynamically developing sectors of the economy in the future. The studies offered in the EU in Krakow are interdisciplinary - students gain knowledge both in the area of ​​management and quality sciences, as well as technical and IT. Logistics, the study program has been designed in such a way that the graduates of the faculty, apart from their knowledge, also have the competences necessary to manage human resources in a culturally diverse environment.
+                    </p>
+                    <a href="https://studiuj.uek.krakow.pl/listings/kierunek-logistyka-miedzynarodowa-stacjonarne-i-stopien-inzynierskie/" class="btn btn-primary">Go to site</a>
+                    </div>
+                </div>
+                </div>
+                <!-- <div class="col-sm-4 mb-3">
                 <div class=" bg-dark">
                     <div class="card-body">
                     <h5 class="card-title">Applied Informatics</h5>
@@ -106,9 +159,9 @@
                     <a href="https://studiuj.uek.krakow.pl/listings/kierunek-logistyka-miedzynarodowa-stacjonarne-i-stopien-inzynierskie/" class="btn btn-primary">Go to site</a>
                     </div>
                 </div>
-                </div>
+                </div> -->
                 <div class="col-sm-4 mb-3">
-                    <div class="card bg-dark">
+                    <div class="card card-news bg-dark">
                     <div class="card-body">
                         <h5 class="card-title">Economics</h5>
                         <hr>
@@ -122,57 +175,6 @@
             </div>
         </div>
 
-        <div class="container mb-3">
-            <div class="row">
-                <div class="col-md-0 col-sm-3">
-                  <!-- This to make carusel stay in the middle -->
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Krakow_univesity_of_economics_main_building_cropped.JPG/640px-Krakow_univesity_of_economics_main_building_cropped.JPG" alt="Los Angeles" class="d-block w-100 centered">
-                                <div class="carousel-caption">
-                                    <!-- <h3>Los Angeles</h3> -->
-                                    <h5 style="font-weight: bold;">Main Building</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Akademia_Ekonomiczna_w_Krakowie_Pawilon_F.JPG" alt="Chicago" class="d-block w-100 centered">
-                                <div class="carousel-caption">
-                                    <!-- <h3>Los Angeles</h3> -->
-                                    <h5 style="font-weight: bold;">Finance Hall</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Budynek_BG_UEK.jpg" alt="New York" class="d-block w-100 centered">
-                                <div class="carousel-caption">
-                                    <!-- <h3>Los Angeles</h3> -->
-                                    <h5 style="font-weight: bold;">Library</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
           <h3>Apply</h3>
           <hr>
@@ -226,7 +228,7 @@
                   </div>
                 </div>
                 <button class="btn btn-primary mt-1" type="submit">Submit form</button>
-                <button class="btn btn-danger mt-1" type="submit">Reset form</button>
+                <button class="btn btn-danger mt-1" type="reset">Reset form</button>
               </div>
           </form>
         </div>
